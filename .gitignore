@@ -9,4 +9,5 @@ spec/dummy/tmp/
 spec/dummy/config/application.yml
 /coverage.data
 /coverage/
+coverage/
 .DS_Store
