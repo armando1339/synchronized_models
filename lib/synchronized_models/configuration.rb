@@ -1,23 +1,14 @@
 module SynchronizedModels
   class Configuration
-    attr_accessor(
-      :adapter,
-      :encoding,
-      :host,
-      :username,
-      :password,
-      :database,
-      :kinedu_url
-    )
+    attr_accessor :adapter, :encoding, :host, :username, :password, :database
 
     def initialize
-      @adapter = nil
+      @adapter = 'postgresql'
       @encoding = 'utf8'
       @host = nil
       @username = nil
       @password = nil
       @database = nil
-      @kinedu_url = nil
     end
   end
 end
