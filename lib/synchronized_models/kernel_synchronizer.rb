@@ -60,7 +60,7 @@ module Kernel
   # => *
   def initialize_sync_constant(model_name)
     const_set(
-      "Remote#{model_name.to_s.capitalize}",
+      "Remote#{model_name.to_s.camelcase}",
       Class.new(ActiveRecord::Base)
     )
 
@@ -69,7 +69,7 @@ module Kernel
   
   # => *
   def synchronized_constant(model_name)
-    "#{name}::Remote#{model_name.to_s.capitalize}".constantize
+    "#{name}::Remote#{model_name.to_s.camelcase}".constantize
   end
 
   # => *
