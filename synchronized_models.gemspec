@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.authors     = ["Armando Alejandre"]
   spec.email       = ["armando1339@gmail.com"]
   spec.homepage    = "https://github.com/armando1339/synchronized_models"
-  spec.metadata    = { source_code_uri: "https://github.com/armando1339/synchronized_models" }
+  spec.metadata    = { "source_code_uri" => "https://github.com/armando1339/synchronized_models" }
   spec.summary     = "Add a model into another model with an external database connection."
   spec.description = "Add a model into another model with an external database connection."
   spec.license     = "MIT"
