@@ -8,8 +8,9 @@ Gem::Specification.new do |spec|
   spec.name        = "synchronized_models"
   spec.version     = SynchronizedModels::VERSION
   spec.authors     = ["Armando Alejandre"]
-  spec.email       = ["armando@kinedu.com"]
-  spec.homepage    = ""
+  spec.email       = ["armando1339@gmail.com"]
+  spec.homepage    = "https://github.com/armando1339/synchronized_models"
+  spec.metadata    = { source_code_uri: "https://github.com/armando1339/synchronized_models" }
   spec.summary     = "Add a model into another model with an external database connection."
   spec.description = "Add a model into another model with an external database connection."
   spec.license     = "MIT"
@@ -17,7 +18,7 @@ Gem::Specification.new do |spec|
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata["allowed_push_host"] = "https://rubygems.org"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
