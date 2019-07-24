@@ -13,13 +13,9 @@ SynchronizedModels.configure do |config|
   # => Required parameters without
   # default values.
   #
-  config.adapter    =   'mysql2' # ENV['EXTERNAL_DB_ADAPTER']
-  config.host       =   'localhost' # ENV['EXTERNAL_DB_HOST']
-  config.username   =   'root' # ENV['EXTERNAL_DB_USERNAME']
-  config.password   =   '' # ENV['EXTERNAL_DB_PASSWORD']
-  config.database   =   'kinedu_development' # ENV['EXTERNAL_DB_NAME']
+  config.adapter    =   ENV['EXTERNAL_DB_ADAPTER']
+  config.host       =   ENV['EXTERNAL_DB_HOST']
+  config.username   =   ENV['EXTERNAL_DB_USERNAME']
+  config.password   =   ENV['EXTERNAL_DB_PASSWORD']
+  config.database   =   ENV['EXTERNAL_DB_NAME']
 end
-
-User = Class.new
-
-class User; end
