@@ -1,3 +1,3 @@
 module SynchronizedModels
-  VERSION = '1.0.1alpha'
+  VERSION = '1.1.0alpha'
 end
