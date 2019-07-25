@@ -39,7 +39,9 @@ module Kernel
   # Account::RemoteUser.create email: user@example.com, password: 123456
   #
   def sync_remote_model(*args)
-    configure_sync_constant(*args)
+    configure_sync_constant(*args) do |const|
+      yield const if block_given?
+    end
   end
 
   private
@@ -55,6 +57,8 @@ module Kernel
       conts.send :table_name=, select_table_name(args).to_s.tableize
       conts.establish_connection database_adapter
     end
+
+    yield synchronized_constant args.fetch(:model_name)
   end
 
   # => *
